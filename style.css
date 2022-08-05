@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: url(assets/justice-background.jpg) no-repeat fixed;
+  background-size: cover;
+  min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+  }
+
+.container{
+    background-color: #2b2922;
+    min-height: 50vh;
+    padding: 2rem 6rem;
+}
+
+/* Navbar */
+
+.navbar{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    margin-left: 18rem;
+}
+
+.list-item{
+    margin-left: 2rem;
+    color: #758283;
+    cursor: pointer;
+}
+
+.list-item:first-child {
+    color: #ffffff;
+    font-weight: 800;
+  }
+
+  .nav-btn {
+    border: 1px solid #9d8c35;
+    color: #9d8c35;
+    padding: 10px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  
+  /* Hero Section */
+
+
+  .hero{
+    display: grid;
+    margin-top: 5%;
+  grid-template-columns: 6fr 6fr;
+  grid-gap: 3rem;
+  color: #ffffff;
+  align-items: center;
+}
+  
+.hero-heading {
+    font-size: 4rem;
+    line-height: 2.5cm;
+  }
+  
+  .hero-description {
+    font-size: 1.2rem;
+    color: #758283;
+  }
+
+  /* Media query */
+  
+  @media (max-width: 1290px) {
+    .nav-list{
+       
+        margin-left: 0;
+    }
+    .container{
+        background: none;
+        min-height: 0;
+    }
+    
+  }
+
+  @media (max-width: 1015px) {
+    .container{
+        padding: 1rem 0 0 0;
+
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .nav-list{
+        margin: 1rem 0;
+    }
+    .nav-btn {
+        color: #fff;
+        background-color: #9d8c35;
+        
+      }
+      .hero{
+        display: block;
+        text-align: center;
+        width: 80%;
+        margin: 2rem auto 0;
+      }
+
+  }
+  @media (max-width: 575px)
+  {
+    .list-item{
+        margin-left: 0.8rem;
+    }
+    .hero-heading{
+        font-size: 3rem;
+        line-height: 1.5cm;
+        margin-bottom: 2rem;
+    }
+  }
